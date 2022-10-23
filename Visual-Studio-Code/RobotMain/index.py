@@ -99,11 +99,11 @@ class Robot:
     
 
     def greet(self):
-        print("Hello, my name is", self.name)
+        print("Olá, meu nome é ", self.name)
     
 
     def print_energy(self):
-        print("We have", self.energy, " percent energy left")
+        print("Seu robô tem", self.energy, "porcento de percentual de energia restante")
 
 #Código Listas e Dicionários.ipynb    
     def attack(self, enemy_robot, part_to_use, part_to_attack):
@@ -130,11 +130,11 @@ class Robot:
 
 def choose_color():
         available_colors = colors
-        print("Available colors:")
+        print("Cores disponíveis:")
         for key, value in available_colors.items():
             print(value, key)
         print(colors["White"])
-        choose_color = input("Choose a color: ")
+        choose_color = input("Escolha uma cor pro robô: ")
         color_code = available_colors[choose_color]
         return color_code
       
